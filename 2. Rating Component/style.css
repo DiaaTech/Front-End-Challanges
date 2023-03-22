@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+
+  background-color: var(--VeryDarkBlue);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 200px;
+
+  gap: 20px;
+
+  padding: 20px 30px;
+
+  background-color: hsl(214, 18%, 15%);
+  color: var(--White);
+}
+
+.container .star {
+  background-color: var(--DarkBlue);
+  opacity: 0.9;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 50%;
+
+  font-size: 1.2rem;
+}
+.container .star img {
+  width: 25px;
+  height: 25px;
+}
+
+.container .introduction p {
+  color: var(--LightGrey);
+  font-size: 19px;
+}
+.container .ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.container .ratings button {
+  background-color: hsl(213, 19%, 18%);
+  border: none;
+  font-size: 20px;
+  color: var(--LightGrey);
+
+  border-radius: 50%;
+  padding: 20px;
+}
+.container .ratings button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.container .submit {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-size: 23px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 0px;
+}
+
+.container .submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
